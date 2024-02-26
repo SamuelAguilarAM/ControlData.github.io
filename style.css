@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#header {
+    background-color: #833177ff;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+#animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    color: #833177ff;
+    text-align: center;
+    line-height: 50px;
+    animation: slide 2s infinite alternate;
+}
+
+nav {
+    background-color: #833177ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex; 
+    justify-content: center;
+}
+
+nav a {
+    display: flex;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #563851;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #833177ff;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    color: #833177ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #833177ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+#sidebar {
+    width: 200px;
+    background-color: #833177ff;
+    padding: 20px;
+}
+
+#main {
+    flex: 1;
+    padding: 20px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(50px);
+    }
+}
+
+/* Animación para ocultar la sección de Análisis */
+#Análisis {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.5s ease-in-out;
+}
+
+/* Estilos para el botón de volver en la página de Análisis */
+#Ánalisis-content .cta-button {
+    background-color: #833177ff;
+    color: #fff;
+}
+
+/* Animación para mostrar la sección de Análisis */
+#Análisis.show {
+    left: 0;
+}
+
+/* Animación para ocultar la sección de proyectos */
+#Proyectos {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.5s ease-in-out;
+}
+
+/* Estilos para el botón de volver en la página de proyectos */
+#proyectos-content .cta-button {
+    background-color: #833177ff;
+    color: #fff;
+}
+
+/* Animación para mostrar la sección de proyectos */
+#Proyectos.show {
+    left: 0;
+}
+
+
+/* Animación para ocultar la sección de team */
+#Team {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.5s ease-in-out;
+}
+
+/* Estilos para el botón de volver en la página de team */
+#Team-content .cta-button {
+    background-color: #833177ff;
+    color: #fff;
+}
+
+/* Animación para mostrar la sección de team */
+#Team.show {
+    left: 0;
+}
+
+/* Estilos para el formulario de selección de fuentes de datos */
+.data-source-select {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.data-source-select:focus {
+    outline: none;
+    border-color: #833177ff;
+    background-color: #fff;
+}
+
+.submit-button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #833177ff; /* Color morado */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #833177ff; /* Un tono de morado más oscuro */
+}
+
+#DataInputForm {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#DataInputForm h2 {
+    color: #833177ff;
+    margin-bottom: 20px;
+}
+
+
+
+
+  
